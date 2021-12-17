@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+.hero {
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, $colorGradient, $colorGradient),
+    url("../images/main-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
+  padding: 200px 0;
+  text-align: center;
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    // text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    margin: 0 0 30px;
+  }
+}

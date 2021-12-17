@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.occupation {
+  padding-top: 0;
+}
+
+.occupation__shell {
+  text-align: center;
+}
+
+.occupation__list {
+  display: flex;
+}
+
+.occupation__list-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+@import "./development-type";

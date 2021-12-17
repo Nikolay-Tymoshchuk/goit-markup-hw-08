@@ -1,0 +1,22 @@
+@import "../utils/variables";
+
+.contacts__list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.contacts__map-address {
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.71;
+}
+
+.contacts__mailphone {
+  font-style: normal;
+  color: #ffffff99;
+  line-height: 1.71;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $colorAccent;
+}

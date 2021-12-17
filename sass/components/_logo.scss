@@ -1,0 +1,21 @@
+@import "../utils/variables";
+
+.logo {
+  text-decoration: unset;
+  font-family: $fontFamilySecondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: #000000;
+
+  &__web-element {
+    color: $colorAccent;
+  }
+}
+
+.logo--footerstyle {
+  display: inline-block;
+  color: #ffffff;
+  margin-bottom: 20px;
+}

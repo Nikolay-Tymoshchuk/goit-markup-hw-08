@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+.bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bgColorSecondary;
+}
+
+.bottom__shell {
+  display: flex;
+}
+
+.bottom__adress-shell {
+  min-width: 231px;
+  margin-right: 73px;
+}
+
+@import "./contacts";
+
+.bottom__join-us {
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom__links-shell {
+  min-width: 206px;
+}
+
+.bottom__subscribe {
+  display: inline-flex;
+}
+
+@import "../forms/secondary-form";

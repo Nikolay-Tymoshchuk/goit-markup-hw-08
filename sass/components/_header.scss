@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+.header--border {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__top-bar {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+@import "./logo";
+@import "./site-navigation";
+@import "./auth-navigation";

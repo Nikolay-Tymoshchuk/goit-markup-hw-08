@@ -1,0 +1,23 @@
+@import "../utils/variables";
+
+.customers__list {
+  display: flex;
+}
+
+.customers__list-item:not(:nth-child(1)) {
+  margin-left: 30px;
+}
+
+.customers__shell {
+  max-width: 170px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  fill: $colorPrimaryIcon;
+  border: 1px solid $colorPrimaryIcon;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorAccent;
+    fill: $colorAccent;
+  }
+}
