@@ -1,5 +1,9 @@
 @import "../utils/variables";
 
+.contacts__list {
+  text-align: center;
+}
+
 .contacts__list-item:not(:last-child) {
   margin-bottom: 5px;
 }

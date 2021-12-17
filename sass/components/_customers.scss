@@ -2,18 +2,22 @@
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.customers__list-item:not(:nth-child(1)) {
-  margin-left: 30px;
+.customers__list-item {
+  flex-basis: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 .customers__shell {
-  max-width: 170px;
+  // max-width: 170px;
   padding: 16px 32px;
   border-radius: 4px;
   fill: $colorPrimaryIcon;
   border: 1px solid $colorPrimaryIcon;
+  text-align: center;
 
   &:hover,
   &:focus {

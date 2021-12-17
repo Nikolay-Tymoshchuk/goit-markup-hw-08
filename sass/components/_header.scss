@@ -5,11 +5,45 @@
 }
 
 .header__top-bar {
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 80px;
+  justify-content: space-between;
+  min-height: 60px;
+  //
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+.header__mobile-container {
+  display: none;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background-color: #fff;
+
+  &.is-open {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+// .header__top-bar {
+//   display: flex;
+//   align-items: center;
+//   min-height: 80px;
+// }
 
 @import "./logo";
 @import "./site-navigation";
 @import "./auth-navigation";
+@import "./menu-button";
+@import "./our-socialnets-contacts";

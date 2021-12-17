@@ -7,29 +7,39 @@
 }
 
 .bottom__shell {
-  display: flex;
+  text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .bottom__adress-shell {
   min-width: 231px;
-  margin-right: 73px;
+  // margin-right: 73px;
+  margin-bottom: 60px;
 }
 
 @import "./contacts";
 
 .bottom__join-us {
   display: flex;
-  padding-top: 12px;
+  flex-direction: column;
+  align-items: center;
+  // padding-top: 12px;
   justify-content: space-between;
   width: 100%;
 }
 
 .bottom__links-shell {
+  text-align: center;
   min-width: 206px;
+  margin-bottom: 60px;
 }
 
 .bottom__subscribe {
-  display: inline-flex;
+  display: block;
+  width: 100%;
+  // display: inline-flex;
 }
 
 @import "../forms/secondary-form";
