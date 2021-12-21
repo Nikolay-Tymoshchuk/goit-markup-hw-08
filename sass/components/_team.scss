@@ -8,7 +8,17 @@
 }
 
 .team__list {
-  // display: flex;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid: repeat(1, 1fr) / repeat(4, 1fr);
+  }
 }
 
 .team__list-item {
@@ -25,6 +35,10 @@
 
 .team__list-item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 @import "./emploee-card";

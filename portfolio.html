@@ -45,14 +45,14 @@
           <nav>
             <ul class="site-nav site-nav--space-set list">
               <li class="site-nav__list-item">
-                <a href="./index.html" class="site-nav__link link h--color"
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__link--current link h--color"
                   >Студия</a
                 >
               </li>
               <li class="site-nav__list-item">
-                <a
-                  href="./portfolio.html"
-                  class="site-nav__link site-nav__link--current link h--color"
+                <a href="./portfolio.html" class="site-nav__link link h--color"
                   >Портфолио</a
                 >
               </li>
@@ -62,7 +62,7 @@
             </ul>
           </nav>
           <div class="header__contacts-socialnets-box">
-            <ul class="auth-nav auth-nav--space-set list">
+            <ul class="auth-nav list">
               <li class="auth-nav__list-item">
                 <a
                   href="mailto:info@devstudio.com"
@@ -484,39 +484,39 @@
     <!--.................................Footer start here...........................................-->
 
     <footer class="section bottom">
-      <div class="container bottom__shell">
-        <div class="bottom__adress-shell">
-          <a href="./index.html" class="logo logo--footerstyle"
-            ><span class="logo__web-element">Web</span>Studio</a
-          >
-          <address class="contacts">
-            <ul class="contacts__list list">
-              <li class="contacts__list-item">
-                <a
-                  href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4267174,30.5365151,17.56z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.538386?hl=ru"
-                  class="contacts__map-address contacts__link link h--color"
-                  >г. Киев, пр-т Леси Украинки, 26
-                </a>
-              </li>
-              <li class="contacts__list-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contacts__mailphone contacts__link link h--color"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__list-item">
-                <a
-                  href="tel:+380961111111"
-                  class="contacts__mailphone contacts__link link h--color"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+      <div class="container bottom__box">
         <div class="bottom__join-us">
-          <div class="bottom__links-shell">
+          <div class="bottom__adress-box">
+            <a href="./index.html" class="logo logo--footerstyle"
+              ><span class="logo__web-element">Web</span>Studio</a
+            >
+            <address class="contacts">
+              <ul class="contacts__list list">
+                <li class="contacts__list-item">
+                  <a
+                    href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4267174,30.5365151,17.56z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.538386?hl=ru"
+                    class="contacts__map-address contacts__link link h--color"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contacts__list-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contacts__mailphone contacts__link link h--color"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__list-item">
+                  <a
+                    href="tel:+380961111111"
+                    class="contacts__mailphone contacts__link link h--color"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="bottom__links-box">
             <h3 class="h3-title h3-title--footer-indent">присоединяйтесь</h3>
             <ul class="links-list links-list--no-justify list">
               <li class="links-list__item">
@@ -577,38 +577,32 @@
               </li>
             </ul>
           </div>
-          <div class="bottom__subscribe">
-            <form name="secondary-form" autocomplete="off">
-              <div class="secondary-form__shell">
-                <div class="secondary-form__input-shell">
-                  <label
-                    for="subs-email"
-                    class="h3-title h3-title--footer-indent"
-                    >Подпишитесь на рассылку</label
-                  >
-                  <input
-                    class="secondary-form__input"
-                    type="email"
-                    name="subs-email"
-                    id="subs-email"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <button type="submit" class="primary-button">
-                  <span class="primary-button__core">
-                    Подписаться
-                    <svg
-                      class="primary-button__icon"
-                      width="24px"
-                      height="24px"
-                    >
-                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                    </svg>
-                  </span>
-                </button>
+        </div>
+        <div class="bottom__subscribe">
+          <form name="secondary-form" autocomplete="off">
+            <div class="secondary-form__box">
+              <div class="secondary-form__input-box">
+                <label for="subs-email" class="h3-title h3-title--footer-indent"
+                  >Подпишитесь на рассылку</label
+                >
+                <input
+                  class="secondary-form__input"
+                  type="email"
+                  name="subs-email"
+                  id="subs-email"
+                  placeholder="E-mail"
+                />
               </div>
-            </form>
-          </div>
+              <button type="submit" class="primary-button">
+                <span class="primary-button__core">
+                  Подписаться
+                  <svg class="primary-button__icon" width="24px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

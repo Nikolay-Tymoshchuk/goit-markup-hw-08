@@ -1,16 +1,18 @@
 @import "../utils/variables";
 
 .secondary-form {
-  min-width: 570px;
+  min-width: 100%;
 }
 
-.secondary-form__shell {
-  // display: inline-flex;
-  // flex-direction: column;
-  // align-items: flex-end;
+.secondary-form__box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 12px;
+  }
 }
 
-.secondary-form__input-shell {
+.secondary-form__input-box {
   display: flex;
   flex-direction: column;
 }
@@ -22,10 +24,14 @@
   border-radius: 4px;
   color: #fff;
   padding: 15px 16px;
-  // width: 358px;
-  // margin-right: 12px;
   height: 50px;
   margin-bottom: 20px;
+
+  @media screen and(min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   &:focus {
     outline: none;
