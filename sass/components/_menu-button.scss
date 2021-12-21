@@ -17,6 +17,10 @@
   &:focus {
     fill: $colorAccent;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button__menu {
