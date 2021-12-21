@@ -1,8 +1,10 @@
 @import "../utils/variables";
 
 .examples-set {
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+  margin-top: 40px;
 
   /* display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
@@ -10,21 +12,30 @@
 }
 
 .examples-set__item {
-  flex-basis: calc((100% - 60px) / 3);
-  margin: 0 30px 30px 0;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+  max-width: 100%;
+  margin: 15px;
 
   &:hover,
   &:focus {
     box-shadow: $shadowItem;
   }
+
+  // .examples-set__item {
+  //   flex-basis: calc((100% - 60px) / 3);
+  //   margin: 0 30px 30px 0;
+
+  //   &:nth-child(3n) {
+  //     margin-right: 0;
+  //   }
+
+  //   &:nth-last-child(-n + 3) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   &:hover,
+  //   &:focus {
+  //     box-shadow: $shadowItem;
+  //   }
 }
 
 @import "../components/example-works";
