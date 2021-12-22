@@ -1,41 +1,45 @@
 @import "../utils/variables";
 
 .examples-set {
-  // display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
   margin-top: 40px;
 
-  /* display: grid;
-  grid: repeat(3, 1fr) / repeat(3, 1fr);
-  grid-gap: 30px; */
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid: (440px 1fr 1fr 1fr 1fr) / repeat(2, 1fr);
+
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+  }
 }
 
 .examples-set__item {
-  max-width: 100%;
-  margin: 15px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover,
   &:focus {
     box-shadow: $shadowItem;
   }
+}
 
-  // .examples-set__item {
-  //   flex-basis: calc((100% - 60px) / 3);
-  //   margin: 0 30px 30px 0;
-
-  //   &:nth-child(3n) {
-  //     margin-right: 0;
-  //   }
-
-  //   &:nth-last-child(-n + 3) {
-  //     margin-bottom: 0;
-  //   }
-
-  //   &:hover,
-  //   &:focus {
-  //     box-shadow: $shadowItem;
-  //   }
+.examples-set__link {
+  display: block;
+  height: 100%;
 }
 
 @import "../components/example-works";
