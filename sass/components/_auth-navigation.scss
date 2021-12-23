@@ -42,11 +42,35 @@
 
 .auth-nav__icon {
   display: none;
+  align-items: center;
   fill: currentColor;
   margin-right: 8px;
 
+  &--envelope {
+    width: 14px;
+    height: 10px;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &--smartphone {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: 1200px) {
+      height: 16px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: inherit;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
   }
 }
 
@@ -72,6 +96,7 @@
 
     @media screen and (min-width: 1200px) {
       font-size: 14px;
+      line-height: 1.14;
     }
 
     &:hover {

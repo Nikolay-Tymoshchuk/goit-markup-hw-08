@@ -468,13 +468,45 @@ body {
 
 .auth-nav__icon {
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: currentColor;
   margin-right: 8px;
+}
+
+.auth-nav__icon--envelope {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.auth-nav__icon--smartphone {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon--smartphone {
+    height: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .auth-nav__icon {
     display: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__icon {
+    margin-right: 10px;
   }
 }
 
@@ -506,6 +538,7 @@ body {
 @media screen and (min-width: 1200px) {
   .auth-nav__list-item:not(:first-child) .auth-nav__link {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 
