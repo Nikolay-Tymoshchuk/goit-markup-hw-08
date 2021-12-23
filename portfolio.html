@@ -26,7 +26,7 @@
         <a href="./index.html" class="logo"
           ><span class="logo__web-element">Web</span>Studio</a
         >
-        <button class="menu-button h--fill" type="button" data-menu-button>
+        <button class="menu-button h--fill" type="button" data-menu-open>
           <svg
             width="40px"
             height="40px"
@@ -37,13 +37,26 @@
               class="menu-button__menu"
               href="./images/symbol-defs.svg#menu_40px"
             ></use>
-            <use
-              class="menu-button__close"
-              href="./images/symbol-defs.svg#close_40px"
-            ></use>
           </svg>
         </button>
         <div class="header__mobile-container" data-menu>
+          <button
+            class="menu-button menu-button--close h--fill"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+            >
+              <use
+                class="menu-button__close"
+                href="./images/symbol-defs.svg#close_40px"
+              ></use>
+            </svg>
+          </button>
           <nav>
             <ul class="site-nav site-nav--space-set list">
               <li class="site-nav__list-item">

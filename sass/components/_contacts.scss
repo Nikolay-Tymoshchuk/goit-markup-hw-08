@@ -2,6 +2,10 @@
 
 .contacts__list {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .contacts__list-item:not(:last-child) {

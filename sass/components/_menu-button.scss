@@ -1,17 +1,13 @@
 @import "../utils/variables";
 
 .menu-button {
-  position: relative;
   cursor: pointer;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   line-height: 0;
-  display: inline-flex;
   border: none;
-  margin: 0;
   padding: 0;
   background-color: transparent;
   fill: #000;
-  z-index: 2;
 
   &:hover,
   &:focus {
@@ -21,21 +17,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.menu-button__menu {
-  display: block;
-
-  .menu-button.is-open & {
-    display: none;
-  }
-}
-
-.menu-button__close {
-  display: none;
-  z-index: 2;
-
-  .menu-button.is-open & {
-    display: block;
+  &--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
   }
 }

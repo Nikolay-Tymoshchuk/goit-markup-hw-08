@@ -43,6 +43,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -263,7 +267,7 @@ body {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -561,19 +565,13 @@ body {
 }
 
 .menu-button {
-  position: relative;
   cursor: pointer;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   line-height: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   border: none;
-  margin: 0;
   padding: 0;
   background-color: transparent;
   fill: #000;
-  z-index: 2;
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -586,21 +584,10 @@ body {
   }
 }
 
-.menu-button__menu {
-  display: block;
-}
-
-.menu-button.is-open .menu-button__menu {
-  display: none;
-}
-
-.menu-button__close {
-  display: none;
-  z-index: 2;
-}
-
-.menu-button.is-open .menu-button__close {
-  display: block;
+.menu-button--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .socialnets-contacts {
@@ -880,6 +867,12 @@ body {
   padding-bottom: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .employee__meta {
+    padding-bottom: 30px;
+  }
+}
+
 .employee__name {
   color: #212121;
   font-weight: 500;
@@ -1015,8 +1008,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .bottom__adress-box {
+    text-align: start;
+  }
+}
+
 .contacts__list {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    text-align: start;
+  }
 }
 
 .contacts__list-item:not(:last-child) {
@@ -1112,6 +1117,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .secondary-form__input-box {
+    text-align: start;
+  }
 }
 
 .secondary-form__input {

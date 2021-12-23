@@ -6,6 +6,10 @@ body {
   font-family: $fontFamilyPrimary;
   font-size: $fontSizePrimary;
   letter-spacing: $fontLetterSpacingPrimary;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .section {
