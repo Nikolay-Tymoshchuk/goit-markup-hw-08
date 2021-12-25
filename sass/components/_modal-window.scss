@@ -28,7 +28,9 @@
   transition: transform $animationDuration $animationTimeFunction;
 
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.3) rotate(135deg);
+    transform: translate(-50%, -50%) scale(0) rotate(135deg);
+
+    transition: transform $animationDuration $animationTimeFunction;
   }
 }
 
