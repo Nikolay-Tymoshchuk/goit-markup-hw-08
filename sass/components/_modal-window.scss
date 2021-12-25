@@ -10,6 +10,11 @@
   background-color: #fff;
   padding: 40px;
 
+  @media screen and (max-height: 609px) {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }

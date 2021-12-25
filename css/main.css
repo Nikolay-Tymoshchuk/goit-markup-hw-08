@@ -1188,6 +1188,13 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-height: 609px) {
+  .modal {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
